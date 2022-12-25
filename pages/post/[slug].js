@@ -97,16 +97,16 @@ export default function Post(props) {
           </div> */}
 
           <Container className="!pt-0">
-            <div className="max-w-screen-md mx-auto ">
+            <div className="max-w-screen-lg mx-auto ">
               <div className="text-center">
                 <CategoryLabel categories={post.categories} />
               </div>
 
-              <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
-                {post.title}
+              <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-start lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
+                {post.title.toUpperCase()} 
               </h1>
 
-              <div className="flex justify-center mt-3 space-x-3 text-gray-500 ">
+              <div className="flex justify-start mt-3 space-x-3 text-gray-500 ">
                 <div className="flex items-center gap-3">
                   <div className="relative flex-shrink-0 w-10 h-10">
                     {AuthorimageProps && (
@@ -149,7 +149,7 @@ export default function Post(props) {
             </div>
           </Container>
 
-          <div className="relative z-0 max-w-screen-lg mx-auto overflow-hidden lg:rounded-lg aspect-video">
+          <div className="relative z-0 max-w-screen-custom mx-auto overflow-hidden lg:rounded-lg aspect-video">
             {imageProps && (
               <Image
                 src={imageProps.src}
@@ -166,7 +166,7 @@ export default function Post(props) {
 
           {/* {post?.mainImage && <MainImage image={post.mainImage} />} */}
           <Container>
-            <article className="max-w-screen-md mx-auto ">
+            <article className="max-w-screen-lg mx-auto ">
               <div className="mx-auto my-3 prose prose-base dark:prose-invert prose-a:text-blue-500">
                 {post.body && <PortableText value={post.body} />}
               </div>
