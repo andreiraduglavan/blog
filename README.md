@@ -10,7 +10,20 @@
    <img alt ='node js image' src='https://firebasestorage.googleapis.com/v0/b/shred-klub.appspot.com/o/WhatsApp%20Image%202022-12-26%20at%2023.42.01.jpeg?alt=media&token=203815a7-e806-4428-9033-278fad10a659' width='600px' >
 
 ### 3 Descarca codul
+     
+    <img alt ='node js image' src='https://firebasestorage.googleapis.com/v0/b/shred-klub.appspot.com/o/Screen%20Shot%202022-12-27%20at%2000.01.01.png?alt=media&token=89e9c8c4-48a0-4f46-bfd9-c139772b912a' width='600px' >
     
+### 4 Dezarhiveaza fisierul
+
+### 5 ruleaza urmatoarele comenzi in terminal
+      <code>cd <PATH> </code> unde <PATH> este ruta spre folder ul dezarhivat de exemplu <PATH>= C:/Users/andrei/downloads/blog-main
+      apoi ruleaza
+      <code>npm i --legacy-peer-deps</code>
+   
+### 6 Initiaza sanity ruleaza 
+        <code>sanity init --coupon javascriptmastery2022</code>
+        <img alt ='node js image' src='https://firebasestorage.googleapis.com/v0/b/shred-klub.appspot.com/o/WhatsApp%20Image%202022-12-27%20at%2000.12.48.jpeg?alt=media&token=ff24d4c5-4bab-447c-8b4f-9199c408f95b' width='600px' >
+
    
   
 
