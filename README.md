@@ -1,4 +1,4 @@
-## Bullshit Factory
+# Bullshit Factory
 
 ### 1 Instaleaza node <a href='https://nodejs.org/en/download/' >download node</a>
 
