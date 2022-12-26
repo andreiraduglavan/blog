@@ -1,13 +1,12 @@
 ## Bullshit Factory
 
-##1 Instaleaza node
+#1 Instaleaza node
     
     <a href='https://nodejs.org/en/download/' >https://nodejs.org/en/download/</a>
     
-    Atentie sa selectezi ca in imagine
-    <img alt='node js image' src='https://firebasestorage.googleapis.com/v0/b/shred-klub.appspot.com/o/WhatsApp%20Image%202022-12-26%20at%2023.34.06.jpeg?alt=media&token=a2ddcd07-5e7a-4d1c-a4ab-cec87fd38131' width='600px' >
+
     
-##2 Instaleaza sanity
+#2 Instaleaza sanity
 
    Din terminal(cauta cmd(windows) sau terminal(macos)) ruleaza comanda <code>npm install -g @sanity/cli</code>
    
