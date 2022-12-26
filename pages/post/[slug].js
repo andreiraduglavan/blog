@@ -15,12 +15,24 @@ import { parseISO, format } from "date-fns";
 import { NextSeo } from "next-seo";
 import defaultOG from "/public/img/opengraph.jpg";
 
-import { singlequery, configQuery, pathquery } from "@lib/groq";
+import { singlequery, configQuery, pathquery, featuredPostsQuery } from "@lib/groq";
 import CategoryLabel from "@components/blog/category";
 import AuthorCard from "@components/blog/authorCard";
+import PostList from "@components/postlist";
+
+const shuffleArray = array => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array
+}
 
 export default function Post(props) {
-  const { postdata, siteconfig, preview } = props;
+  const { postdata, siteconfig, preview, posts } = props;
+  
 
   const router = useRouter();
   const { slug } = router.query;
@@ -97,7 +109,7 @@ export default function Post(props) {
           </div> */}
 
           <Container className="!pt-0">
-            <div className="max-w-screen-lg mx-auto ">
+            <div className="max-w-screen-md mx-auto ">
               <div className="text-center">
                 <CategoryLabel categories={post.categories} />
               </div>
@@ -179,6 +191,15 @@ export default function Post(props) {
               </div>
               {post.author && <AuthorCard author={post.author} />}
             </article>
+            <div className="grid gap-10 mt-10 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
+              {posts.map(post => (
+                <PostList
+                  key={post._id}
+                  post={post}
+                  aspect="square"
+                />
+              ))}
+            </div>
           </Container>
         </Layout>
       )}
@@ -206,14 +227,16 @@ export async function getStaticProps({ params, preview = false }) {
   const post = await getClient(preview).fetch(singlequery, {
     slug: params.slug
   });
-
+  var posts = await getClient(preview).fetch(featuredPostsQuery);
+  posts = shuffleArray(posts).slice(0,3)
   const config = await getClient(preview).fetch(configQuery);
 
   return {
     props: {
       postdata: { ...post },
       siteconfig: { ...config },
-      preview
+      preview,
+      posts
     },
     revalidate: 10
   };

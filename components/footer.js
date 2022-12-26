@@ -20,7 +20,7 @@ export default function Footer(props) {
            // It helps us to grow & continue our work. Thank you.
           // OR Purchase PRO version for commercial license.  */}
           <a
-            href="https://web3templates.com/?ref=stablo-template"
+            href="https://purplr.io/"
             rel="noopener"
             target="_blank">
             Purplr
@@ -28,12 +28,12 @@ export default function Footer(props) {
         </span>
         <span>&middot;</span>
         <span>
-          {" "}
+          {" "}    
           <a
-            href="https://github.com/web3templates/stablo"
+            href="https://web3templates.com/?ref=stablo-template"
             rel="noopener"
             target="_blank">
-            Github
+            Web3Templates
           </a>
         </span>
       </div>
