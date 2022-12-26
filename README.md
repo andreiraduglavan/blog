@@ -3,7 +3,6 @@
 #1 Instaleaza node
     
     <a href='https://nodejs.org/en/download/' >https://nodejs.org/en/download/</a>
-    
 
     
 #2 Instaleaza sanity
