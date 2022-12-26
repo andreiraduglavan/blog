@@ -1,8 +1,6 @@
 ## Bullshit Factory
 
-#1 Instaleaza node
-
-    <a href='https://nodejs.org/en/download/' >download node</a>
+#1 Instaleaza node <a href='https://nodejs.org/en/download/' >download node</a>
 
     
 #2 Instaleaza sanity
