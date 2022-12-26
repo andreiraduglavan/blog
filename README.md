@@ -17,7 +17,9 @@
 
 ### 5 ruleaza urmatoarele comenzi in terminal
       <code>cd <PATH> </code> unde <PATH> este ruta spre folder ul dezarhivat de exemplu <PATH>= C:/Users/andrei/downloads/blog-main
+      
       apoi ruleaza
+      
       <code>npm i --legacy-peer-deps</code>
    
 ### 6 Initiaza sanity ruleaza 
