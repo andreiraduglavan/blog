@@ -5,7 +5,7 @@
     
     Atentie sa selectezi ca in imagine
     
-    <img alt ='node js image' src='https://firebasestorage.googleapis.com/v0/b/shred-klub.appspot.com/o/WhatsApp%20Image%202022-12-26%20at%2023.34.06.jpeg?alt=media&token=a2ddcd07-5e7a-4d1c-a4ab-cec87fd38131' width='600px' >
+    <img alt ='node js image' src='https://firebasestorage.googleapis.com/v0/b/shred-klub.appspot.com/o/WhatsApp%20Image%202022-12-26%20at%2023.34.06.jpeg?alt=media&token=a2ddcd07-5e7a-4d1c-a4ab-cec87fd38131' width='600px' ></img>
     
 #2 Instaleaza sanity
 
